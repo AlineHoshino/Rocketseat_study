@@ -49,7 +49,7 @@ form {
    background-color: white;
    margin-top: 38px;
    border-radius: 8px 8px 0 0;
-
+    height: 1034px;
 }
 
 fieldset {
@@ -156,3 +156,25 @@ h2{
     margin-top:8px;
 }
 
+footer {
+    background: #535971;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 64px;
+    border-top: 1px solid #D6D6D6;
+    border-radius: 0 0 8px 8px;
+  }
+
+  footer button {
+    height: 56px;
+    width:608px;
+    background: #FF5374;
+    border: 0;
+    border-radius: 8px;
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+  
