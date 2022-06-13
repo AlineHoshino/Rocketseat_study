@@ -19,7 +19,7 @@ body{
     max-width: 38.4rem;
 }
 
-header{
+header div{
     font-family: var(--ff-header);
     color: white;
     background-color: #8E9AAF;
@@ -29,6 +29,16 @@ header{
     align-items: center;
     justify-content: center;
     
+}
+
+header p{
+    font-size: 2.0rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 15px;
+    margin-top: 14px;
+    margin-bottom: 6.3rem;
 }
 
 header h1{
@@ -45,15 +55,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
-main p{
-    font-size: 2.0rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    line-height: 15px;
-    margin-top: 14px;
-    margin-bottom: 6.3rem;
-}
+
 
 
 .card {
@@ -108,4 +110,58 @@ div + div{
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  #picoleS {
+      display:none;
+  }
+
+  #paletaS{
+      display:none;
+  }
+
+  @media (min-width: 700px){
+    .page {
+        display: flex;
+        gap: 9.8rem;
+        max-width: 128.7rem;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    
+        font-size: 2.4rem;
+    
+        background-color: #ffffff;
+      }
+    
+      header{
+          max-width: 37.7rem;
+          height: 72.0rem;
+          background-color: #8E9AAF;
+          
+      }
+
+      main{
+          display: flex;
+          flex-direction: row;
+          gap:3.2rem;
+          align-items: center;
+          justify-content: center;
+      }
+
+     .card h2{
+         display:none;
+     }
+
+      img{
+          width:22.0rem;
+      }
+     #picoleS {
+        display:flex;
+    }
+  
+    #paletaS{
+        display:flex;
+    }
+    
   }
