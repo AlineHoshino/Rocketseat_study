@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 82.1rem;
+    height: 33.6rem;
+    gap:8rem;
+    align-self: center;
+    justify-self: center;
+}
+
+button {
+    background-color:#E1E1E6;
+    width: 13rem;
+    height: 15.2rem;
+    cursor:pointer;
+}
+
+.control {
+    width:4.8rem;
+    height: 4.8rem;
+}
+
+#controles{
+    display: flex;
+    justify-content: space-between;
+    width: 31.2rem;
+    cursor:pointer;
+}
+
+#container-music{
+    width:30.8rem;
+}
+
+#tree_cloud{
+    margin-bottom: 3.2rem;
+}
+
+#rain{
+    margin-left: 1.2rem;
+    width:4.4rem;
+    height: 5.6rem;
+
+}
+
+#btn_store{
+    margin-right: 3.2rem;
+}
+
+#btn_tree{
+    margin-right: 3.2rem;;
+}
+span {
+    font-weight: 500;
+    font-size: 12.6rem;
+}
