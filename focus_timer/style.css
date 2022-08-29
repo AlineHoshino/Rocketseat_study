@@ -32,6 +32,11 @@ button {
 .control {
     width:4.8rem;
     height: 4.8rem;
+    background-color: white;
+}
+
+.hide{
+    display: none;
 }
 
 #controles{
