@@ -1,10 +1,11 @@
-export function Timer({
+export default function Timer({
     minutesDisplay,
     secondsDisplay,
     timerTimeOut,
-    resetControls
+    resetControls,
+    minutes
 }){
-    function resetTimer(){
+    function reset(){
         updateTimeDisplay(minutes,0)
         clearTimeout(timerTimeOut)
     }
@@ -34,6 +35,6 @@ export function Timer({
     }
     return {
         countdown,
-        resetTimer
+        reset
     }
 }
