@@ -53,6 +53,6 @@ export default function() {
         buttonCafeteria,
         buttonFire,
         buttonForest,
-        buttonRain
+        buttonRain,
     }
 }

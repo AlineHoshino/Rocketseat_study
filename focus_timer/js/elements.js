@@ -13,6 +13,12 @@ const inputCafe = document.querySelector('.rangeCafe')
 const inputFire = document.querySelector('.rangeFire')
 const inputTree = document.querySelector('.rangeTree')
 const inputRain= document.querySelector('.rangeRain')
+const sol = document.querySelector('.sol')
+const lua = document.querySelector('.lua')
+const body = document.body;
+const allBtn = document.querySelectorAll("button")
+const allInputs = document.querySelectorAll("input")
+
 
 export  {
     buttonPause,
@@ -30,4 +36,9 @@ export  {
     inputFire,
     inputTree,
     inputRain,
+    sol,
+    lua,
+    body,
+    allBtn,
+    allInputs
 }

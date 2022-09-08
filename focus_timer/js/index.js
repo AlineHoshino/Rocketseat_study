@@ -16,14 +16,25 @@ import {
     btnRain,
     inputRain,
     btnTree,
-    inputTree
+    inputTree,
+    sol,
+    lua,
+    body,
+    allBtn,
+    allInputs
 
 } from "./elements.js"
 
 
 const controls = Controls({
     buttonPlay,
-    buttonPause
+    buttonPause,
+    body,
+    sol,
+    lua,
+    btnCafe,
+    allBtn,
+    allInputs
 })
 
 const timer = Timer({
@@ -62,8 +73,8 @@ btnCafe.addEventListener('click', function(){
     sound.soundCafe()
 })
 
-btnCafe.addEventListener('click', function(){
-    sound.soundCafe()
+btnCafe.addEventListener('dblclick', function(){
+    sound.buttonCafeteria.pause()
 })
 
 
@@ -103,4 +114,14 @@ inputTree.addEventListener('change', function(){
 
 inputRain.addEventListener('change', function(){
     sound.volumeRain()
+})
+
+sol.addEventListener('click', function(){
+    controls.changeMode()
+    controls.addLua()
+})
+
+lua.addEventListener('click', function(){
+    controls.changeMode()
+    controls.addSol()
 })

@@ -32,7 +32,7 @@ button {
 .control {
     width:4.8rem;
     height: 4.8rem;
-    background-color: white;
+
 }
 
 .hide{
@@ -76,4 +76,14 @@ span {
 .volume {
     margin-top: 2rem;
     width:10rem
+}
+
+header{
+    justify-self: end;
+    margin-right: 21rem;
+}
+
+.dark{
+    background-color: black;
+    color: white
 }
