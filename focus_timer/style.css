@@ -32,6 +32,11 @@ button {
 .control {
     width:4.8rem;
     height: 4.8rem;
+
+}
+
+.hide{
+    display: none;
 }
 
 #controles{
@@ -66,4 +71,19 @@ button {
 span {
     font-weight: 500;
     font-size: 12.6rem;
+}
+
+.volume {
+    margin-top: 2rem;
+    width:10rem
+}
+
+header{
+    justify-self: end;
+    margin-right: 21rem;
+}
+
+.dark{
+    background-color: black;
+    color: white
 }
