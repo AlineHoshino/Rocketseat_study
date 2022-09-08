@@ -72,3 +72,8 @@ span {
     font-weight: 500;
     font-size: 12.6rem;
 }
+
+.volume {
+    margin-top: 2rem;
+    width:10rem
+}

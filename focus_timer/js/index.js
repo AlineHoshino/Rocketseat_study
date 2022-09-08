@@ -1,13 +1,25 @@
 import  Controls from "./controls.js"
 import  Timer from "./timer.js"
+import Sound from './sounds.js'
+import {
+    buttonPause,
+    buttonPlay,
+    buttonStop,
+    secondsDisplay,
+    minutesDisplay,
+    buttonIncreaseTime,
+    buttonDecreaseTime,
+    btnCafe,
+    inputCafe,
+    btnFire,
+    inputFire,
+    btnRain,
+    inputRain,
+    btnTree,
+    inputTree
 
-const buttonPlay = document.querySelector('.play')
-const buttonPause = document.querySelector('.pause')
-const buttonStop = document.querySelector('.stop')
-const secondsDisplay = document.querySelector('.seconds')
-const minutesDisplay = document.querySelector('.minutes')
-let minutes = Number(minutesDisplay.textContent)
-let timerTimeOut;
+} from "./elements.js"
+
 
 const controls = Controls({
     buttonPlay,
@@ -17,10 +29,10 @@ const controls = Controls({
 const timer = Timer({
     minutesDisplay,
     secondsDisplay,
-    timerTimeOut,
     resetControls: controls.reset,
-    minutes
 })
+
+const sound = Sound()
 
 buttonPlay.addEventListener('click', function(){
     controls.play()
@@ -29,10 +41,66 @@ buttonPlay.addEventListener('click', function(){
 
 buttonPause.addEventListener('click', function(){
     controls.pause()
-    clearTimeout(timerTimeOut)
+    timer.hold()
 })
 
 buttonStop.addEventListener('click', function(){
     controls.reset()
     timer.reset()
+})
+
+buttonIncreaseTime.addEventListener('click', function(){
+    timer.increaseTime()
+})
+
+
+buttonDecreaseTime.addEventListener('click', function(){
+    timer.decreaseTime()
+})
+
+btnCafe.addEventListener('click', function(){
+    sound.soundCafe()
+})
+
+btnCafe.addEventListener('click', function(){
+    sound.soundCafe()
+})
+
+
+btnFire.addEventListener('click', function(){
+    sound.soundFire()
+})
+btnFire.addEventListener('dblclick', function(){
+    sound.buttonFire.pause()
+})
+
+
+btnTree.addEventListener('click', function(){
+    sound.soundTree()
+})
+
+btnTree.addEventListener('dblclick', function(){
+    sound.buttonForest.pause()
+})
+btnRain.addEventListener('click', function(){
+    sound.soundRain()
+})
+
+btnRain.addEventListener('dblclick', function(){
+    sound.buttonRain.pause()
+})
+inputCafe.addEventListener('change', function(){
+    sound.volumeCafe()
+})
+
+inputFire.addEventListener('change', function(){
+    sound.volumeFire()
+})
+
+inputTree.addEventListener('change', function(){
+    sound.volumeTree()
+})
+
+inputRain.addEventListener('change', function(){
+    sound.volumeRain()
 })
